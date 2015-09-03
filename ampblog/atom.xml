@@ -1,28 +1,97 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>AMPed</title>
+ <link href="http://ampblog.amarkpark.com/atom.xml" rel="self"/>
+ <link href="http://ampblog.amarkpark.com/"/>
+ <updated>2015-09-03T21:37:39+00:00</updated>
+ <id>http://ampblog.amarkpark.com</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>amarkpark</name>
+   <email>amarkpark@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Epiphany</title>
+   <link href="http://ampblog.amarkpark.com/2015/09/02/epiphany/"/>
+   <updated>2015-09-02T00:00:00+00:00</updated>
+   <id>http://ampblog.amarkpark.com/2015/09/02/epiphany</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;strong&gt;#YouKnowYoureAWebDeveloperWhen&lt;/strong&gt; A quick static page accidentally becomes a multipage Bootstrapped site w/ header logo and content in ver 1.1
+&lt;/div&gt;
+
+&lt;h2 id=&quot;that-was-my-ah-ha-moment&quot;&gt;That was my “Ah Ha!” moment&lt;/h2&gt;
+
+&lt;p&gt;I had been revising what should have been a simple static page with a few lines of text on it for &lt;em&gt;HOURS&lt;/em&gt;, happily diving down the rabbit hole in order to resolve a few issues I had and adding “just one more thing…” “just one more thing…” until my single simple HTML page had become a sleek multi-page app with a header and a child page and a logo and content all nicely arranged just so in Bootstrap.&lt;/p&gt;
+
+&lt;p&gt;By the end of the day I was composing three different methods to describe a dog’s tail wagging in Ruby and I was thinking of boiling water in terms of a Ruby method.&lt;/p&gt;
+
+&lt;p&gt;Coding is my heroine.&lt;/p&gt;
+
+&lt;p&gt;I feel a lot like Remo Williams right about now:
+&lt;a href=&quot;http://www.imdb.com/title/tt0089901/&quot;&gt;“The Adventure Begins”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;~AMP&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//method 1 works&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Number of wags?&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;to_i&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// method 2 works&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Number of wags?&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;to_i&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;//  method 3 works&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Number of wags?&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;to_i&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tailwags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
  </entry>
- {% endfor %}
+ 
 
 </feed>
