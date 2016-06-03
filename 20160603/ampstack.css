@@ -16,7 +16,7 @@ h1 {
   margin: 0px;
 }
 
-p, .resume {
+p {
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 300;
   margin: 1em;
@@ -27,12 +27,6 @@ h2 {
   font-weight: 200;
 }
 
-.main_ul_title {
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 10px;
-}
 
 /*.box {
   background-color: rgba(200,200,205,0.5);
@@ -47,17 +41,15 @@ h2 {
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
 /*    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;*/
     width: 100%;
     height: auto;
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
 }
 
 .flex-main {
-    /*background-color: cornflowerblue;*/
+    background-color: cornflowerblue;
     width: 70%;
     /*height: 100px;*/
     margin: 10px;
@@ -65,7 +57,7 @@ h2 {
 }
 
 .flex-side {
-    /*background-color: cornflowerblue;*/
+    background-color: cornflowerblue;
     width: 30%;
     /*height: 100px;*/
     margin: 10px;
@@ -76,12 +68,12 @@ h2 {
   align-items: flex-start;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*background-color: green;*/
+  background-color: green;
   margin-bottom: 5px;
 }
 
 .Media-figure {
-  margin: 2em;
+  margin: 1em;
 }
 
 .Media-body {
@@ -247,7 +239,7 @@ body {
 
   .flex-main { width: 100%; }
 
-  /*.flex-side { width: 100%; }*/
+  .flex-side { width: 100%; }
 
   /*.svg { width: 100%; margin: 0; }*/
 }
