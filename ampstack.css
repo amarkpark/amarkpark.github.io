@@ -1,0 +1,255 @@
+/* ampstack.css */
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.clear {
+  clear:both;
+}
+
+h1 {
+  color: purple;
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+  font-size: 40px;
+  margin: 0px;
+}
+
+p {
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 300;
+  margin: 1em;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+}
+
+
+/*.box {
+  background-color: rgba(200,200,205,0.5);
+  padding: 18px;
+  width: 380px;
+  margin: 40px auto;
+  text-align: center;
+}*/
+
+/*Flexbox Stuff */
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+/*    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+}
+
+.flex-main {
+    background-color: cornflowerblue;
+    width: 70%;
+    /*height: 100px;*/
+    margin: 10px;
+    position: right;
+}
+
+.flex-side {
+    background-color: cornflowerblue;
+    width: 30%;
+    /*height: 100px;*/
+    margin: 10px;
+}
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: green;
+  margin-bottom: 5px;
+}
+
+.Media-figure {
+  margin: 1em;
+}
+
+.Media-body {
+  flex: 1;
+}
+
+/*End Flexbox Stuff*/
+
+/*Circle Divider Styles*/
+
+.maincircle {
+    position: relative;
+    border-radius: 100%;
+    background: #F46C69; /* #7C7C7C;*/
+    /*border: 20px solid #F7F7F7;*/
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    text-align: center;
+    color: #FFF;
+    font: normal 16px/80px Calibri;
+    cursor: pointer;
+}
+
+/*.maincircle::before, .maincircle::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    top: 50%;
+    height: 1px;
+    width: 180px;
+    border-bottom: 1px solid #7C7C7C;
+}
+.maincircle::after {
+    left: auto;
+    right: -200px;
+}*/
+/*.maincircle:hover {
+    border-color: #FFF;
+}*/
+
+.sidecircle {
+    /*position: absolute;*/
+    border-radius: 100%;
+    background: #65B6C1; /* #A4D9E4;  #7C7C7C;*/
+    /*border: 20px solid #F7F7F7;*/
+    width: 80px;
+    height: 80px;
+    /*margin: 20px;*/
+    text-align: center;
+    color: #FFF;
+    font: normal 16px/80px Calibri;
+    cursor: pointer;
+}
+
+/*.sidecircle::after {
+    content: "content";
+    position: absolute;
+    left: 100px;
+    right: -20px;
+    top: 50%;
+    height: 1px;
+    width: 180px;
+    border-bottom: 1px solid #7C7C7C;
+}*/
+
+/*.sidecircle::before, .sidecircle::after { display: none; }*/
+​
+/*End Circle Divider Styles*/
+
+
+/*Codepen Styles*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.code {
+  width: 100%;
+  background: #f46c69;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  /*margin: 0;*/
+}
+
+.svg {
+  position: absolute;
+  bottom: -10px;
+  /*width: 700px;*/
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#macbook {
+  //display: block;
+  animation: macbook .7s linear;
+  transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#coder {
+  animation: coder .8s linear;
+  transform-origin: center center;
+}
+
+#coffee {
+  animation: coffee 1s linear;
+  transform-origin: 83% 80%;
+}
+
+#smoke {
+  animation: smoke 3s infinite;
+}
+
+@keyframes macbook {
+  0%{transform: translateY(300px)}
+  50%{transform: translateY(10px)}
+  100% {transform: translateY(0px)}
+}
+
+@keyframes coder {
+  0%{transform: scale(0); opacity: 0}
+  50%{transform: scale(1.5); opacity: 1}
+  100% {transform: scale(1); opacity:1}
+}
+
+@keyframes coffee {
+  0%{transform: scale(0); opacity: 0}
+  50%{transform: scale(1.5); opacity: 1}
+  100% {transform: scale(1); opacity:1}
+}
+
+@keyframes smoke {
+  0%{transform: translateY(0px); opacity: 1;}
+  50%{ opacity: .5;}
+  100%{transform: translateY(-15px); opacity: 0;}
+}
+/*End Codepen Styles*/
+
+@media (max-width: 750px) {
+/*  #smoke, #coffee, #ipad {
+    display:none;
+  }*/
+
+  .code { height: 200px; }
+
+  .maincircle {
+    width: 60px;
+    height: 60px;
+    font: normal 14px/60px Calibri;
+  }
+
+/*  .maincircle::before { display:none; }*/
+
+  .flex-container {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flex-main { width: 100%; }
+
+  .flex-side { width: 100%; }
+
+  /*.svg { width: 100%; margin: 0; }*/
+}
+
+/*Sample colors
+Mac background grey: #5C5E60 
+Banner background orange: #f46c69 #F46C69 
+iPad Highlight Turquoise: #A4D9E4 
+Other greys: #B8C7CD #EFEFEF #E3E4E5 #2A333A #474A4E
+Coffee brown: #563726 #3C2415
+Coffee cup creme: #FCFCFC 
+Coder Highlight Turquoise: #65B6C1
+Smoke: #EBECED */
