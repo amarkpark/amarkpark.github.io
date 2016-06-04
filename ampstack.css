@@ -100,8 +100,7 @@ h5 {
 .socialpng {
   height: 64px;
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1, 1, auto;
 }
 
 .Media {
