@@ -8,7 +8,7 @@
   clear:both;
 }
 
-p, .resume {
+p, #resume {
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 300;
   /*margin: 1em;*/
