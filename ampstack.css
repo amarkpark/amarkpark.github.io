@@ -281,6 +281,18 @@ body {
     flex-wrap: wrap;
   }
 
+  .Media {
+    flex-direction: column;
+  }
+
+  .Media-figure {
+    order: 1;
+  }
+
+  .Media-body {
+    order: 99;
+  }
+
   .flex-main { width: 100%; }
 
   .flex-footer { width: 100%; }
