@@ -9,9 +9,8 @@
 }
 
 p, #resume {
-  font-family: 'Helvetica Neue', Helvetica;
+  font-family: "Helvetica Neue", Helvetica;
   font-weight: 300;
-  /*margin: 1em;*/
 }
 
 h5 {
@@ -33,11 +32,9 @@ h5 {
 }
 
 .main_ul_timeline {
-  /*font-size: 1.2em;*/
-  /*font-family: ‘Arial Narrow’, sans-serif;*/
-  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+  font-family: Copperplate, “Copperplate Gothic Light”, fantasy;
+  font-size: 1.5em;
   font-variant: small-caps;
-  /*text-align: center;*/
   margin-bottom: 10px;
 }
 
@@ -64,31 +61,22 @@ h5 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-/*    -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;*/
   width: 100%;
   height: auto;
-  /*background-color: lightgrey;*/
 }
 
 .flex-main {
-  /*background-color: cornflowerblue;*/
   width: 70%;
-  /*height: 100px;*/
   margin: 10px;
-  /*position: right;*/
 }
 
 .flex-side {
-  /*background-color: cornflowerblue;*/
   width: 30%;
-  /*height: 100px;*/
   margin: 10px;
 }
 
 #footer {
   height: 100px;
-  /*width: 100%;*/
   background-color: #65B6C1;
   display: -webkit-flex;
   display: flex;
@@ -97,7 +85,6 @@ h5 {
 }
 
 .flex-footer {
-  /*background-color: cornflowerblue;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -132,7 +119,6 @@ h5 {
   align-items: flex-start;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*background-color: green;*/
   margin-bottom: 5px;
 }
 
@@ -162,27 +148,23 @@ h5 {
     position: relative;
     border-radius: 100%;
     background: #F46C69; /* #7C7C7C;*/
-    /*border: 20px solid #F7F7F7;*/
     width: 80px;
     height: 80px;
     margin: 20px auto;
     text-align: center;
     color: #FFF;
-    font: normal 14px/80px 'Helvetica Neue', Helvetica;
+    font: normal 14px/80px "Helvetica Neue", Helvetica;
     cursor: pointer;
 }
 
 .sidecircle {
-    /*position: absolute;*/
     border-radius: 100%;
     background: #65B6C1; /* #A4D9E4;  #7C7C7C;*/
-    /*border: 20px solid #F7F7F7;*/
     width: 80px;
     height: 80px;
-    /*margin: 20px;*/
     text-align: center;
     color: #FFF;
-    font: normal 14px/80px 'Helvetica Neue', Helvetica;
+    font: normal 14px/80px "Helvetica Neue", Helvetica;
     cursor: pointer;
 }
 ​
@@ -217,7 +199,7 @@ body {
 }
 
 #macbook {
-  //display: block;
+  display: block;
   animation: macbook .7s linear;
   transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
